@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NOps.Common")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("NOps commonly used classes")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Fubineva")]
 [assembly: AssemblyProduct("NOps.Common")]
