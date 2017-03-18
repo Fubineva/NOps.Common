@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace NOps.Common
+namespace NOps.Common.Configuration
 {
     public interface IConfigLoader
     {

@@ -1,11 +1,9 @@
 ﻿using System.IO;
 using System.Threading;
-
 using Newtonsoft.Json;
-
 using Formatting = Newtonsoft.Json.Formatting;
 
-namespace NOps.Common
+namespace NOps.Common.Configuration
 {
     public class ConfigLoader : IConfigLoader
     {

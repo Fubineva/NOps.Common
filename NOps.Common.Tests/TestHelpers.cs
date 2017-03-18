@@ -1,5 +1,5 @@
 using System.IO;
-using System.Reflection;
+using Microsoft.Extensions.PlatformAbstractions;
 
 namespace NOps.Common.Tests
 {
@@ -7,7 +7,8 @@ namespace NOps.Common.Tests
     {
         public static string GetAppDir()
         {
-            var appPath = Assembly.GetExecutingAssembly().Location;
+            var appPath = PlatformServices.Default.Application.ApplicationBasePath;
+            
             return Path.GetDirectoryName(appPath);
         }
     }

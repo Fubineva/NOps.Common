@@ -1,4 +1,6 @@
-﻿namespace NOps.Common.Tests
+﻿using NOps.Common.Configuration;
+
+namespace NOps.Common.Tests
 {
     public class MyTestConfig : Config
     {

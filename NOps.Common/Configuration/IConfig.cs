@@ -1,4 +1,4 @@
-﻿namespace NOps.Common
+﻿namespace NOps.Common.Configuration
 {
     public interface IConfig
     {

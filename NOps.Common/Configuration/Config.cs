@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace NOps.Common
+namespace NOps.Common.Configuration
 {
     public abstract class Config
     {
@@ -28,7 +28,7 @@ namespace NOps.Common
         {
             if (string.IsNullOrEmpty(FilePathName))
             {
-                throw new ApplicationException("This configuration has no FilePathName set, please set it or specify one explicitly.");
+                throw new Exception("This configuration has no FilePathName set, please set it or specify one explicitly.");
             }
 
             Save(FilePathName);

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-
 using NUnit.Framework;
+using NOps.Common.Configuration;
 
 namespace NOps.Common.Tests
 {
@@ -47,15 +47,17 @@ namespace NOps.Common.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(ApplicationException))]
         public void Save_on_new_config_without_filename_should_throw()
         {
             // arrange
             var cfg = new MyTestConfig();
 
             // act
-            cfg.Save();
-
+            var result = Assert.Throws<Exception>(() =>
+            {
+                cfg.Save();
+            });
+            
             // assert
         }
 
